@@ -10,11 +10,11 @@
   <header class="topbar">
     <div>
       <h1>可转债抢权配售监控</h1>
-      <p class="subtitle">GitHub Actions 定时抓取数据，GitHub Pages 静态展示；无服务器成本</p>
     </div>
+
     <div class="actions">
-      <button id="reloadBtn">重新读取页面数据</button>
-      <button id="exportBtn" class="secondary">导出当前筛选 CSV</button>
+      <button id="reloadBtn">刷新数据</button>
+      <button id="exportBtn" class="secondary">导出 CSV</button>
     </div>
   </header>
 
@@ -23,22 +23,27 @@
       未来天数
       <input id="days" type="number" min="1" max="365" value="45" />
     </label>
+
     <label>
       目标配售手数
       <input id="targetLots" type="number" min="1" max="100" value="1" />
     </label>
+
     <label>
       统一预估上市价
-      <input id="expectedPrice" type="number" min="0" max="200" step="0.1" placeholder="0=用模型/覆盖值" />
+      <input id="expectedPrice" type="number" min="0" max="200" step="0.1" placeholder="0=默认估值" />
     </label>
+
     <label>
       假设正股回撤 %
       <input id="stockDropPct" type="number" min="0" max="50" step="0.1" value="0" />
     </label>
+
     <label class="checkbox">
       <input id="onlyActive" type="checkbox" checked />
       只看未过登记日
     </label>
+
     <button id="queryBtn">重新计算</button>
   </section>
 
@@ -48,6 +53,7 @@
   </section>
 
   <section id="errorBox" class="error hidden"></section>
+  <section id="warningBox" class="warning hidden"></section>
 
   <main class="table-wrap">
     <table id="bondTable">
@@ -72,18 +78,10 @@
           <th>备注</th>
         </tr>
       </thead>
+
       <tbody></tbody>
     </table>
   </main>
-
-  <section class="panel notes">
-    <h2>GitHub Actions 版说明</h2>
-    <p>这个版本没有后端 API。GitHub Actions 会按工作流里的 cron 定时执行 <code>scripts/generate_data.py</code>，生成 <code>public/data/bonds_latest.json</code>，然后部署到 GitHub Pages。</p>
-    <p>页面上的“重新读取页面数据”只会重新拉取已部署的 JSON；真正刷新源数据，需要等定时任务，或在 GitHub 仓库 Actions 页面手动运行 workflow。</p>
-    <h2>计算口径</h2>
-    <p>1 手可转债按 10 张、1000 元面值估算；买入股数按 A 股 100 股整数倍向上取整。安全垫 = 预计转债收益 ÷ 正股买入金额，可理解为正股最多可承受的理论下跌幅。</p>
-    <p>“预估上市价”默认来自简化模型，真实操作建议结合市场情绪、正股波动、评级、规模和公告手动调整。页面只做测算，不构成投资建议。</p>
-  </section>
 
   <script src="./app.js"></script>
 </body>
