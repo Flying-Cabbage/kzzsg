@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>可转债发行生命周期监控</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>可转债发行生命周期监控</h1>
+      <p id="meta">数据加载中...</p>
+    </div>
+    <div class="actions">
+      <a class="btn" href="./data/convertibles.csv">下载 CSV</a>
+      <button class="btn" id="refreshBtn">刷新页面</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats" id="stats"></section>
+
+    <section class="notice" id="sourceNotice"></section>
+
+    <section class="panel">
+      <div class="panel-title">
+        <h2>抢权核心池</h2>
+        <span>今日股权登记、今日申购、股权登记临近、已确定发行、已注册等待发行</span>
+      </div>
+      <div id="coreCards" class="cards"></div>
+    </section>
+
+    <section class="toolbar">
+      <input id="searchInput" placeholder="搜索正股/转债/代码/公告标题" />
+      <select id="stageFilter">
+        <option value="">全部状态</option>
+      </select>
+      <select id="riskFilter">
+        <option value="">全部风险</option>
+        <option value="最高">最高</option>
+        <option value="高">高</option>
+        <option value="中高">中高</option>
+        <option value="中">中</option>
+        <option value="低">低</option>
+      </select>
+      <button class="btn" id="resetBtn">重置</button>
+    </section>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>状态</th>
+            <th>正股</th>
+            <th>转债</th>
+            <th>发行规模</th>
+            <th>股权登记日</th>
+            <th>申购/配债日</th>
+            <th>上市/转股</th>
+            <th>下一步</th>
+            <th>最新公告</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <span>仅做信息整理，不构成投资建议。股权登记日、申购日、配债缴款日请以公司正式公告为准。</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

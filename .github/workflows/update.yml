@@ -1,0 +1,45 @@
+name: update-convertible-bonds
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron 使用 UTC。下面约等于北京时间：08:25、11:40、15:10、22:00（工作日）。
+    - cron: '25 0 * * 1-5'
+    - cron: '40 3 * * 1-5'
+    - cron: '10 7 * * 1-5'
+    - cron: '0 14 * * 1-5'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update data
+        env:
+          TZ: Asia/Shanghai
+          LOOKBACK_DAYS: '1200'
+          CNINFO_MAX_PAGES: '25'
+          CNINFO_PAGE_SIZE: '30'
+        run: python scripts/update_data.py
+
+      - name: Commit data files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'data: update convertible bond monitor'
+          file_pattern: docs/data/*.json docs/data/*.csv
