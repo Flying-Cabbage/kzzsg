@@ -3,47 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>可转债抢权配售监控</title>
+  <title>可转债抢权配售看板</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header class="topbar">
     <div>
-      <h1>可转债抢权配售监控</h1>
+      <h1>可转债抢权配售看板</h1>
+      <p class="subtitle">近期配售机会、买股门槛、安全垫、盈亏矩阵与风险评分</p>
     </div>
-
     <div class="actions">
       <button id="reloadBtn">刷新数据</button>
       <button id="exportBtn" class="secondary">导出 CSV</button>
     </div>
   </header>
 
+  <section class="dashboard-grid" id="statCards">
+    <article class="stat-card"><span>今日登记</span><strong id="statToday">-</strong><em>今天需要确认</em></article>
+    <article class="stat-card"><span>明日登记</span><strong id="statTomorrow">-</strong><em>提前观察</em></article>
+    <article class="stat-card"><span>未来 3 天</span><strong id="statThreeDays">-</strong><em>短线机会池</em></article>
+    <article class="stat-card"><span>A 级机会</span><strong id="statGradeA">-</strong><em>综合评分较高</em></article>
+    <article class="stat-card"><span>最高安全垫</span><strong id="statBestSafety">-</strong><em id="statBestName">-</em></article>
+    <article class="stat-card"><span>最低资金门槛</span><strong id="statLowestCost">-</strong><em id="statLowestName">-</em></article>
+  </section>
+
   <section class="panel filters">
     <label>
       未来天数
       <input id="days" type="number" min="1" max="365" value="45" />
     </label>
-
     <label>
       目标配售手数
       <input id="targetLots" type="number" min="1" max="100" value="1" />
     </label>
-
     <label>
       统一预估上市价
       <input id="expectedPrice" type="number" min="0" max="200" step="0.1" placeholder="0=默认估值" />
     </label>
-
     <label>
       假设正股回撤 %
-      <input id="stockDropPct" type="number" min="0" max="50" step="0.1" value="0" />
+      <input id="stockDropPct" type="number" min="0" max="50" step="0.1" value="2" />
     </label>
-
-    <label class="checkbox">
-      <input id="onlyActive" type="checkbox" checked />
-      只看未过登记日
+    <label>
+      最低安全垫 %
+      <input id="minSafety" type="number" min="-20" max="50" step="0.1" value="0" />
     </label>
-
+    <label>
+      最高买股金额
+      <input id="maxCost" type="number" min="0" step="1000" placeholder="0=不限" />
+    </label>
+    <label>
+      阶段
+      <select id="stageFilter">
+        <option value="active">未过登记日</option>
+        <option value="today">今日重点</option>
+        <option value="threeDays">未来 3 天</option>
+        <option value="future">未来待发行/资料不全</option>
+        <option value="all">全部可见数据</option>
+        <option value="history">历史/已过登记</option>
+      </select>
+    </label>
+    <label>
+      排序
+      <select id="sortBy">
+        <option value="date">登记日优先</option>
+        <option value="score">综合评分</option>
+        <option value="safety">安全垫</option>
+        <option value="cost">资金门槛</option>
+        <option value="profit">综合收益</option>
+      </select>
+    </label>
+    <label class="search-label">
+      搜索
+      <input id="keyword" type="search" placeholder="转债/正股/代码" />
+    </label>
     <button id="queryBtn">重新计算</button>
   </section>
 
@@ -55,33 +88,68 @@
   <section id="errorBox" class="error hidden"></section>
   <section id="warningBox" class="warning hidden"></section>
 
+  <section class="opportunity-layout">
+    <article class="panel focus-panel">
+      <div class="panel-title">
+        <h2>今日与临近重点</h2>
+        <span>按登记日临近程度排序</span>
+      </div>
+      <div id="focusList" class="mini-list"></div>
+    </article>
+
+    <article class="panel focus-panel">
+      <div class="panel-title">
+        <h2>安全垫排行</h2>
+        <span>优先看安全垫和资金占用</span>
+      </div>
+      <div id="rankList" class="mini-list"></div>
+    </article>
+
+    <article class="panel focus-panel">
+      <div class="panel-title">
+        <h2>未来待发行池</h2>
+        <span>日期或配售比例未完整时放这里</span>
+      </div>
+      <div id="futureList" class="mini-list"></div>
+    </article>
+  </section>
+
   <main class="table-wrap">
     <table id="bondTable">
       <thead>
         <tr>
-          <th>状态</th>
+          <th>等级</th>
+          <th>阶段</th>
           <th>转债</th>
           <th>正股</th>
-          <th>股权登记日</th>
+          <th>登记日</th>
           <th>申购日</th>
           <th>配售码</th>
           <th>每股获配额</th>
           <th>买入股数</th>
-          <th>正股金额</th>
-          <th>转股价值</th>
-          <th>信用评级</th>
+          <th>买股金额</th>
           <th>预估上市价</th>
           <th>转债收益</th>
           <th>安全垫</th>
-          <th>综合收益</th>
-          <th>排序分</th>
-          <th>备注</th>
+          <th>正股回撤后</th>
+          <th>风险</th>
+          <th>操作</th>
         </tr>
       </thead>
-
       <tbody></tbody>
     </table>
   </main>
+
+  <dialog id="detailDialog" class="detail-dialog">
+    <div class="dialog-head">
+      <div>
+        <h2 id="detailTitle">转债详情</h2>
+        <p id="detailSub"></p>
+      </div>
+      <button id="closeDetailBtn" class="icon-btn">×</button>
+    </div>
+    <div id="detailBody" class="detail-body"></div>
+  </dialog>
 
   <script src="./app.js"></script>
 </body>

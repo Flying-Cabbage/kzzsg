@@ -26,6 +26,8 @@ DEFAULT_LOOKAHEAD_DAYS = int(os.getenv("DEFAULT_LOOKAHEAD_DAYS", "45"))
 FACE_VALUE_PER_LOT = 1000.0
 BOARD_LOT_SHARES = 100
 
+# GitHub Actions 云端机器访问部分行情源时偶发 RemoteDisconnected/限流。
+# 这里做两层处理：先重试 AkShare；失败后改用东方财富 push2 直接接口补正股行情。
 REQUEST_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -52,16 +54,13 @@ def today_cn() -> date:
 def safe_float(x: Any, default: Optional[float] = None) -> Optional[float]:
     if x is None:
         return default
-
     if isinstance(x, (int, float, np.integer, np.floating)):
         if pd.isna(x):
             return default
         return float(x)
-
     s = str(x).strip().replace(",", "").replace("%", "")
     if s in {"", "-", "--", "nan", "NaN", "None", "null", "NaT"}:
         return default
-
     try:
         return float(s)
     except Exception:
@@ -71,13 +70,11 @@ def safe_float(x: Any, default: Optional[float] = None) -> Optional[float]:
 def safe_str(x: Any) -> str:
     if x is None:
         return ""
-
     try:
         if isinstance(x, float) and pd.isna(x):
             return ""
     except Exception:
         pass
-
     s = str(x).strip()
     if s in {"nan", "NaN", "None", "NaT", "null"}:
         return ""
@@ -88,49 +85,37 @@ def normalize_stock_code(code: Any) -> str:
     s = safe_str(code)
     if not s:
         return ""
-
     if s.endswith(".0"):
         s = s[:-2]
-
     digits = "".join(ch for ch in s if ch.isdigit())
-
     if len(digits) >= 6:
         return digits[-6:]
-
     return digits.zfill(6) if digits else ""
 
 
 def parse_date_any(x: Any) -> Optional[date]:
     if x is None:
         return None
-
     if isinstance(x, pd.Timestamp):
         if pd.isna(x):
             return None
         return x.date()
-
     if isinstance(x, datetime):
         return x.date()
-
     if isinstance(x, date):
         return x
-
     if isinstance(x, (float, np.floating)) and pd.isna(x):
         return None
-
     s = safe_str(x)
     if not s:
         return None
-
     if s.endswith(".0"):
         s = s[:-2]
-
     if s.isdigit() and len(s) == 8:
         try:
             return datetime.strptime(s, "%Y%m%d").date()
         except Exception:
             return None
-
     try:
         ts = pd.to_datetime(s, errors="coerce")
         if pd.isna(ts):
@@ -185,10 +170,7 @@ def estimate_bond_listing_price(
     stock_change_pct: Optional[float],
     issue_size_yi: Optional[float],
 ) -> float:
-    """
-    简化估价模型：只用于页面默认排序和初筛，不代表真实上市价格。
-    """
-
+    """简化估价模型：只用于页面默认排序和初筛，不代表真实上市价格。"""
     cv = convert_value if convert_value and convert_value > 0 else 100.0
     cv_part = max(-8.0, min(38.0, 0.72 * (cv - 100.0)))
 
@@ -210,29 +192,21 @@ def estimate_bond_listing_price(
 
 def load_manual_overrides() -> Dict[str, Dict[str, Any]]:
     overrides: Dict[str, Dict[str, Any]] = {}
-
     if not OVERRIDE_FILE.exists():
         return overrides
-
     with OVERRIDE_FILE.open("r", encoding="utf-8-sig", newline="") as f:
-        useful_lines = (
-            line for line in f
-            if not line.lstrip().startswith("#") and line.strip()
-        )
+        useful_lines = (line for line in f if not line.lstrip().startswith("#") and line.strip())
         reader = csv.DictReader(useful_lines)
-
         for row in reader:
             code = safe_str(row.get("bond_code"))
             if not code:
                 continue
-
             overrides[code] = {
                 "record_date": parse_date_any(row.get("record_date")),
                 "allot_per_share": safe_float(row.get("allot_per_share")),
                 "expected_price": safe_float(row.get("expected_price")),
                 "remark": safe_str(row.get("remark")),
             }
-
     return overrides
 
 
@@ -243,51 +217,34 @@ class BuildResult:
     warnings: List[str]
 
 
-def retry_call(
-    name: str,
-    fn: Callable[[], Any],
-    tries: int = 3,
-    base_sleep: float = 2.0,
-) -> Any:
+def retry_call(name: str, fn: Callable[[], Any], tries: int = 3, base_sleep: float = 2.0) -> Any:
     last_exc: Optional[Exception] = None
-
     for i in range(tries):
         try:
             return fn()
-        except Exception as exc:
+        except Exception as exc:  # noqa: BLE001
             last_exc = exc
             if i < tries - 1:
                 time.sleep(base_sleep * (i + 1) + random.uniform(0.2, 1.2))
-
     raise RuntimeError(f"{name} 连续 {tries} 次失败：{last_exc}")
 
 
 def chunked(items: Sequence[str], n: int) -> Iterable[Sequence[str]]:
     for i in range(0, len(items), n):
-        yield items[i:i + n]
+        yield items[i : i + n]
 
 
 def eastmoney_secid(code: str) -> str:
     code = normalize_stock_code(code)
-
+    # 沪市主板/科创板常见代码 6/9 开头；其余深市 0/2/3 开头。
     if code.startswith(("5", "6", "7", "9")):
         return f"1.{code}"
-
     return f"0.{code}"
 
 
 def fetch_stock_quotes_eastmoney(stock_codes: Sequence[str]) -> pd.DataFrame:
-    """
-    东方财富 push2 备用行情源。
-    只抓当前转债涉及的正股，不抓全市场，降低 GitHub Actions 被断开的概率。
-    """
-
-    codes = sorted({
-        normalize_stock_code(c)
-        for c in stock_codes
-        if normalize_stock_code(c)
-    })
-
+    """东方财富 push2 直连备用源，只抓当前转债涉及的正股，避免全市场接口被断开。"""
+    codes = sorted({normalize_stock_code(c) for c in stock_codes if normalize_stock_code(c)})
     if not codes:
         return pd.DataFrame()
 
@@ -297,10 +254,8 @@ def fetch_stock_quotes_eastmoney(stock_codes: Sequence[str]) -> pd.DataFrame:
 
     with requests.Session() as session:
         session.headers.update(REQUEST_HEADERS)
-
         for group in chunked(codes, 80):
             secids = ",".join(eastmoney_secid(c) for c in group)
-
             params = {
                 "fltt": "2",
                 "invt": "2",
@@ -315,15 +270,8 @@ def fetch_stock_quotes_eastmoney(stock_codes: Sequence[str]) -> pd.DataFrame:
                 resp.raise_for_status()
                 return resp.json()
 
-            data = retry_call(
-                "东方财富正股行情备用源",
-                _request,
-                tries=3,
-                base_sleep=1.5,
-            )
-
+            data = retry_call("东方财富正股行情备用源", _request, tries=3, base_sleep=1.5)
             diff = (data.get("data") or {}).get("diff") or []
-
             for item in diff:
                 price = safe_float(item.get("f2"))
                 pct = safe_float(item.get("f3"))
@@ -331,7 +279,6 @@ def fetch_stock_quotes_eastmoney(stock_codes: Sequence[str]) -> pd.DataFrame:
                 float_mv = safe_float(item.get("f21"))
                 pct_60d = safe_float(item.get("f24"))
                 pct_ytd = safe_float(item.get("f25"))
-
                 records.append(
                     {
                         "代码": normalize_stock_code(item.get("f12")),
@@ -344,55 +291,30 @@ def fetch_stock_quotes_eastmoney(stock_codes: Sequence[str]) -> pd.DataFrame:
                         "正股简称_stock": safe_str(item.get("f14")),
                     }
                 )
-
             time.sleep(random.uniform(0.2, 0.6))
 
-    if not records:
-        return pd.DataFrame()
-
-    return pd.DataFrame(records).drop_duplicates("代码")
+    return pd.DataFrame(records).drop_duplicates("代码") if records else pd.DataFrame()
 
 
-def fetch_stock_quotes(
-    stock_codes: Sequence[str],
-    warnings: List[str],
-) -> Optional[pd.DataFrame]:
-    """
-    正股行情获取逻辑：
-    1. 先尝试 AkShare 的全市场 A 股实时行情；
-    2. 如果 GitHub Actions 环境下被断开，改用东方财富 push2 备用源；
-    3. 如果两个都失败，不中断页面生成，只提示 warning。
-    """
-
+def fetch_stock_quotes(stock_codes: Sequence[str], warnings: List[str]) -> Optional[pd.DataFrame]:
     import akshare as ak
 
     try:
-        stock_df = retry_call(
-            "ak.stock_zh_a_spot_em",
-            ak.stock_zh_a_spot_em,
-            tries=3,
-            base_sleep=2.0,
-        )
-
+        stock_df = retry_call("ak.stock_zh_a_spot_em", ak.stock_zh_a_spot_em, tries=3, base_sleep=2.0)
         if stock_df is not None and len(stock_df) > 0:
             stock_df = stock_df.copy()
-
             if "代码" in stock_df.columns:
                 stock_df["代码"] = stock_df["代码"].map(normalize_stock_code)
-
             return stock_df
-
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         warnings.append(f"ak.stock_zh_a_spot_em 暂时失败，已切换备用行情源：{exc}")
 
     try:
         fallback_df = fetch_stock_quotes_eastmoney(stock_codes)
-
         if fallback_df is not None and len(fallback_df) > 0:
             warnings.append("正股行情已通过东方财富备用源生成。")
             return fallback_df
-
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         warnings.append(f"东方财富备用行情源也失败：{exc}")
 
     return None
@@ -409,23 +331,13 @@ def fetch_and_normalize() -> BuildResult:
     ths_df: Optional[pd.DataFrame] = None
 
     try:
-        em_df = retry_call(
-            "ak.bond_zh_cov",
-            ak.bond_zh_cov,
-            tries=3,
-            base_sleep=2.0,
-        )
-    except Exception as exc:
+        em_df = retry_call("ak.bond_zh_cov", ak.bond_zh_cov, tries=3, base_sleep=2.0)
+    except Exception as exc:  # noqa: BLE001
         errors.append(f"ak.bond_zh_cov 获取失败：{exc}")
 
     try:
-        ths_df = retry_call(
-            "ak.bond_zh_cov_info_ths",
-            ak.bond_zh_cov_info_ths,
-            tries=3,
-            base_sleep=2.0,
-        )
-    except Exception as exc:
+        ths_df = retry_call("ak.bond_zh_cov_info_ths", ak.bond_zh_cov_info_ths, tries=3, base_sleep=2.0)
+    except Exception as exc:  # noqa: BLE001
         warnings.append(f"ak.bond_zh_cov_info_ths 获取失败，配售码等字段可能不完整：{exc}")
 
     if em_df is None and ths_df is None:
@@ -434,16 +346,7 @@ def fetch_and_normalize() -> BuildResult:
     df = em_df.copy() if em_df is not None else ths_df.copy()
 
     if ths_df is not None and "债券代码" in df.columns and "债券代码" in ths_df.columns:
-        keep = [
-            c for c in [
-                "债券代码",
-                "原股东配售码",
-                "原股东配售认购代码",
-                "每股获配额",
-            ]
-            if c in ths_df.columns
-        ]
-
+        keep = [c for c in ["债券代码", "原股东配售码", "原股东配售认购代码", "每股获配额"] if c in ths_df.columns]
         if len(keep) > 1:
             df = df.merge(
                 ths_df[keep].drop_duplicates("债券代码"),
@@ -453,34 +356,20 @@ def fetch_and_normalize() -> BuildResult:
             )
 
     if "正股代码" in df.columns:
-        stock_codes = [
-            normalize_stock_code(c)
-            for c in df["正股代码"].dropna().tolist()
-        ]
+        stock_codes = [normalize_stock_code(c) for c in df["正股代码"].dropna().tolist()]
     else:
         stock_codes = []
-
     stock_df = fetch_stock_quotes(stock_codes, warnings)
 
     if stock_df is not None and "代码" in stock_df.columns and "正股代码" in df.columns:
         stock_df = stock_df.copy()
         stock_df["代码"] = stock_df["代码"].map(normalize_stock_code)
         df["正股代码"] = df["正股代码"].map(normalize_stock_code)
-
         spot_keep = [
-            c for c in [
-                "代码",
-                "最新价",
-                "涨跌幅",
-                "总市值",
-                "流通市值",
-                "60日涨跌幅",
-                "年初至今涨跌幅",
-                "正股简称_stock",
-            ]
+            c
+            for c in ["代码", "最新价", "涨跌幅", "总市值", "流通市值", "60日涨跌幅", "年初至今涨跌幅", "正股简称_stock"]
             if c in stock_df.columns
         ]
-
         if len(spot_keep) > 1:
             df = df.merge(
                 stock_df[spot_keep].drop_duplicates("代码"),
@@ -500,114 +389,50 @@ def fetch_and_normalize() -> BuildResult:
             continue
 
         bond_name = safe_str(get_col(row, "债券简称", "SECURITY_NAME_ABBR"))
-
-        stock_code = normalize_stock_code(
-            get_col(row, "正股代码", "CONVERT_STOCK_CODE")
-        )
-
-        stock_name = safe_str(
-            get_col(row, "正股简称", "SECURITY_SHORT_NAME", "正股简称_stock")
-        )
-
-        subscribe_date = parse_date_any(
-            get_col(row, "申购日期", "APPLY_DATE")
-        )
-
-        record_date = parse_date_any(
-            get_col(row, "原股东配售-股权登记日", "股权登记日", "RECORD_DATE")
-        )
-
+        stock_code = normalize_stock_code(get_col(row, "正股代码", "CONVERT_STOCK_CODE"))
+        stock_name = safe_str(get_col(row, "正股简称", "SECURITY_SHORT_NAME", "正股简称_stock"))
+        subscribe_date = parse_date_any(get_col(row, "申购日期", "APPLY_DATE"))
+        record_date = parse_date_any(get_col(row, "原股东配售-股权登记日", "股权登记日", "RECORD_DATE"))
         if not record_date and subscribe_date:
             record_date = prev_business_day(subscribe_date)
 
         allot = safe_float(
-            get_col(
-                row,
-                "原股东配售-每股配售额",
-                "每股获配额",
-                "每股获配额_ths",
-                "ALLOTMENT_RATIO",
-            )
+            get_col(row, "原股东配售-每股配售额", "每股获配额", "每股获配额_ths", "ALLOTMENT_RATIO")
         )
 
-        stock_price = safe_float(
-            get_col(row, "最新价", "正股价", "CURRENT_PRICE", "正股最新价")
-        )
-
-        stock_change = safe_float(
-            get_col(row, "涨跌幅", "正股涨跌幅")
-        )
-
+        stock_price = safe_float(get_col(row, "最新价", "正股价", "CURRENT_PRICE", "正股最新价"))
+        stock_change = safe_float(get_col(row, "涨跌幅", "正股涨跌幅"))
         market_cap = safe_float(get_col(row, "总市值"))
         float_market_cap = safe_float(get_col(row, "流通市值"))
         change_60d = safe_float(get_col(row, "60日涨跌幅"))
         change_ytd = safe_float(get_col(row, "年初至今涨跌幅"))
-
-        convert_price = safe_float(
-            get_col(row, "转股价", "转股价格", "CONVERT_PRICE")
-        )
-
+        convert_price = safe_float(get_col(row, "转股价", "转股价格", "CONVERT_PRICE"))
         convert_value = safe_float(get_col(row, "转股价值"))
-
-        if (
-            (not convert_value or convert_value <= 0)
-            and stock_price
-            and convert_price
-            and convert_price > 0
-        ):
+        if (not convert_value or convert_value <= 0) and stock_price and convert_price and convert_price > 0:
             convert_value = stock_price / convert_price * 100.0
 
-        issue_size_yi = safe_float(
-            get_col(row, "发行规模", "实际发行量", "计划发行量", "BOND_ISSUE_SCALE")
-        )
-
+        issue_size_yi = safe_float(get_col(row, "发行规模", "实际发行量", "计划发行量", "BOND_ISSUE_SCALE"))
         if issue_size_yi and issue_size_yi > 10000:
             issue_size_yi = issue_size_yi / 1e8
 
         rating = safe_str(get_col(row, "信用评级", "CREDIT_RATING"))
-
-        purchase_code = safe_str(
-            get_col(row, "申购代码", "APPLY_CODE")
-        )
-
-        allot_code = safe_str(
-            get_col(
-                row,
-                "原股东配售码",
-                "原股东配售认购代码",
-                "原股东配售认购代码_ths",
-                "ALLOTMENT_CODE",
-            )
-        )
-
-        listing_date = parse_date_any(
-            get_col(row, "上市时间", "上市日期", "LISTING_DATE")
-        )
-
+        purchase_code = safe_str(get_col(row, "申购代码", "APPLY_CODE"))
+        allot_code = safe_str(get_col(row, "原股东配售码", "原股东配售认购代码", "原股东配售认购代码_ths", "ALLOTMENT_CODE"))
+        listing_date = parse_date_any(get_col(row, "上市时间", "上市日期", "LISTING_DATE"))
         win_rate = safe_float(get_col(row, "中签率"))
 
         manual_expected = None
         remark = ""
-
         if bond_code in overrides:
             override = overrides[bond_code]
-
             if override.get("record_date"):
                 record_date = override["record_date"]
-
             if override.get("allot_per_share"):
                 allot = override["allot_per_share"]
-
             manual_expected = override.get("expected_price")
             remark = override.get("remark") or ""
 
-        model_price = estimate_bond_listing_price(
-            convert_value,
-            rating,
-            stock_change,
-            issue_size_yi,
-        )
-
+        model_price = estimate_bond_listing_price(convert_value, rating, stock_change, issue_size_yi)
         expected_price = manual_expected or model_price
 
         rows.append(
@@ -643,31 +468,23 @@ def fetch_and_normalize() -> BuildResult:
     return BuildResult(rows=rows, errors=errors, warnings=warnings)
 
 
-def compute_preview_rows(
-    rows: List[Dict[str, Any]],
-    lookahead_days: int = DEFAULT_LOOKAHEAD_DAYS,
-) -> List[Dict[str, Any]]:
+def compute_preview_rows(rows: List[Dict[str, Any]], lookahead_days: int = DEFAULT_LOOKAHEAD_DAYS) -> List[Dict[str, Any]]:
     t = today_cn()
     end = t + timedelta(days=max(1, lookahead_days))
     out: List[Dict[str, Any]] = []
-
     for r in rows:
         record_date = parse_date_any(r.get("record_date"))
         subscribe_date = parse_date_any(r.get("subscribe_date"))
         basis_date = record_date or subscribe_date
-
         if not basis_date or not (t <= basis_date <= end):
             continue
-
         allot = safe_float(r.get("allot_per_share"), 0.0) or 0.0
         stock_price = safe_float(r.get("stock_price"), 0.0) or 0.0
         exp_price = safe_float(r.get("expected_price"), 0.0) or 0.0
-
         need_shares = ceil_to_board_lot(FACE_VALUE_PER_LOT / allot) if allot > 0 else 0
         stock_cost = need_shares * stock_price if need_shares and stock_price else 0.0
         expected_profit = FACE_VALUE_PER_LOT * (exp_price - 100.0) / 100.0 if exp_price else 0.0
         safety = expected_profit / stock_cost * 100.0 if stock_cost else 0.0
-
         item = dict(r)
         item.update(
             {
@@ -679,14 +496,7 @@ def compute_preview_rows(
             }
         )
         out.append(item)
-
-    out.sort(
-        key=lambda x: (
-            x.get("days_to_record", 9999),
-            -x.get("safety_cushion_pct_for_1_lot", 0),
-        )
-    )
-
+    out.sort(key=lambda x: (x.get("days_to_record", 9999), -x.get("safety_cushion_pct_for_1_lot", 0)))
     return out
 
 
@@ -717,14 +527,9 @@ def build_payload(result: BuildResult) -> Dict[str, Any]:
 
 def write_outputs(result: BuildResult) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-
     payload = build_payload(result)
-
     tmp_json = JSON_FILE.with_suffix(".tmp")
-    tmp_json.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    tmp_json.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp_json.replace(JSON_FILE)
 
     csv_fields = [
@@ -750,7 +555,6 @@ def write_outputs(result: BuildResult) -> None:
         "expected_price",
         "remark",
     ]
-
     with CSV_FILE.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=csv_fields, extrasaction="ignore")
         writer.writeheader()
@@ -759,7 +563,6 @@ def write_outputs(result: BuildResult) -> None:
 
 def write_error_output(exc: Exception) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-
     payload = {
         "schema_version": 3,
         "app": "可转债抢权配售监控",
@@ -782,33 +585,26 @@ def write_error_output(exc: Exception) -> None:
         "rows": [],
         "preview_rows": [],
     }
-
-    JSON_FILE.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    JSON_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def main() -> None:
     try:
         result = fetch_and_normalize()
         write_outputs(result)
-
         print(f"OK: generated {len(result.rows)} raw rows at {JSON_FILE}")
-
         if result.errors:
             print("ERRORS:")
             for e in result.errors:
                 print("-", e)
-
         if result.warnings:
             print("WARNINGS:")
             for w in result.warnings:
                 print("-", w)
-
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         write_error_output(exc)
         print("ERROR:", exc)
+        # 可转债主数据全部失败时才让 Actions 失败。
         raise
 
 

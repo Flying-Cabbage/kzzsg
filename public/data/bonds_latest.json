@@ -1,11 +1,14 @@
 {
-  "schema_version": 2,
-  "app": "可转债抢权配售监控",
-  "build_time": "尚未由 GitHub Actions 生成",
+  "schema_version": 4,
+  "app": "可转债抢权配售看板 V3",
+  "build_time": "待 GitHub Actions 生成",
   "today": "",
   "timezone": "Asia/Shanghai",
-  "source": ["akshare.bond_zh_cov", "akshare.bond_zh_cov_info_ths", "akshare.stock_zh_a_spot_em"],
-  "errors": ["尚未运行 GitHub Actions。请进入 Actions → Build data and deploy Pages → Run workflow 手动运行一次。"],
+  "source": [],
+  "errors": [],
+  "warnings": [
+    "初始示例数据为空，首次部署后 GitHub Actions 会自动生成正式数据。"
+  ],
   "defaults": {
     "lookahead_days": 45,
     "face_value_per_lot": 1000,
