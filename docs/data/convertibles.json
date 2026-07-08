@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T00:22:05+08:00",
+  "generated_at": "2026-07-08T11:52:30+08:00",
   "today": "2026-07-08",
   "lookback_days": 1200,
   "total": 222,
@@ -2581,7 +2581,7 @@
       "winning_result_date": "2024-12-25",
       "priority_subscribe_date": "2024-12-23",
       "allotment_price": 100.0,
-      "record_date": "2030-12-22",
+      "record_date": "2026-07-28",
       "priority_payment_date": "2024-12-23",
       "rating": "A+",
       "issue_amount_billion": 7.5,
@@ -2590,10 +2590,10 @@
       "expire_date": "2026-07-29",
       "bond_expire_year": 1.5973,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。到期赎回价为115.00元(含最后一期利息)。",
-      "days_to_record": 1628,
+      "days_to_record": 20,
       "days_to_subscribe": -562,
       "risk_level": "低",
-      "next_action": "距离股权登记日还有 1628 天，重点核对正股风险和配债资金。",
+      "next_action": "距离股权登记日还有 20 天，重点核对正股风险和配债资金。",
       "actual_issue_amount_billion": 7.5,
       "planned_issue_amount_billion": 7.5
     },
