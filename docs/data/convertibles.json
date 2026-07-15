@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-15T17:20:13+08:00",
+  "generated_at": "2026-07-15T23:20:44+08:00",
   "today": "2026-07-15",
   "lookback_days": 1200,
-  "total": 221,
+  "total": 222,
   "core_count": 1,
   "alert_count": 2,
   "stages": {
-    "已上市": 212,
+    "已上市": 213,
     "发行成功待上市": 8,
     "今日申购/配债": 1
   },
   "risks": {
     "最高": 1,
     "高": 1,
-    "低": 219
+    "低": 220
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
@@ -78,6 +78,27 @@
       "days_to_subscribe": 2,
       "risk_level": "高",
       "next_action": "距离网上申购/优先配售日还有 2 天。"
+    },
+    {
+      "stock_code": "300631",
+      "stock_name": "久吾高科",
+      "stage": "已上市",
+      "stage_score": 100,
+      "announcements": [],
+      "bond_code": "123276",
+      "bond_name": "久吾转02",
+      "rating": "A+",
+      "online_subscribe_date": "2026-07-20",
+      "issue_amount_billion": 2.54,
+      "winning_rate": 0.0024346191,
+      "listing_date": "2020-04-17",
+      "expire_date": "2021-10-21",
+      "bond_expire_year": 1.589,
+      "interest_rate_explain": "票面利率:第一年为0.5%,第二年为0.8%,第三年为1.2%,第四年为3.0%,第五年为3.6%,第六年为4.0%。",
+      "days_to_record": null,
+      "days_to_subscribe": 5,
+      "risk_level": "低",
+      "next_action": "距离网上申购/优先配售日还有 5 天。"
     },
     {
       "stock_code": "301499",
