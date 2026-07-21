@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-20T23:46:34+08:00",
-  "today": "2026-07-20",
+  "generated_at": "2026-07-21T11:53:37+08:00",
+  "today": "2026-07-21",
   "lookback_days": 1200,
-  "total": 218,
-  "core_count": 1,
-  "alert_count": 2,
+  "total": 217,
+  "core_count": 0,
+  "alert_count": 1,
   "stages": {
-    "已上市": 212,
-    "发行成功待上市": 5,
-    "今日申购/配债": 1
+    "已上市": 213,
+    "发行成功待上市": 4
   },
   "risks": {
-    "最高": 1,
     "高": 1,
     "低": 216
   },
-  "source_warnings": [],
+  "source_warnings": [
+    "AKShare bond_zh_hs_cov_spot 获取失败：('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  ],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。"
 }
