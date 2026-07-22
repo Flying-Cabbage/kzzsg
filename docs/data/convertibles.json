@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T17:36:08+08:00",
+  "generated_at": "2026-07-22T23:27:34+08:00",
   "today": "2026-07-22",
   "lookback_days": 1200,
   "total": 219,
@@ -1964,7 +1964,7 @@
       "allotment_price": 100.0,
       "record_date": "2031-09-18",
       "priority_payment_date": "2025-09-19",
-      "rating": "AA+",
+      "rating": "AA+sti",
       "issue_amount_billion": 15.0,
       "winning_rate": 0.00384399,
       "listing_date": "2025-10-22",
