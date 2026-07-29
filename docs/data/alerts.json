@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-29T17:47:26+08:00",
+  "generated_at": "2026-07-29T23:45:59+08:00",
   "today": "2026-07-29",
   "lookback_days": 1200,
-  "total": 218,
+  "total": 219,
   "core_count": 2,
   "alert_count": 3,
   "stages": {
     "已上市": 209,
-    "发行成功待上市": 7,
+    "发行成功待上市": 8,
     "今日申购/配债": 2
   },
   "risks": {
     "最高": 2,
     "高": 1,
-    "低": 215
+    "低": 216
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
@@ -46,7 +46,7 @@
       "priority_payment_date": "2026-07-29",
       "rating": "AA",
       "issue_amount_billion": 12.7,
-      "winning_rate": null,
+      "winning_rate": 0.00150357,
       "listing_date": null,
       "expire_date": "2032-07-29",
       "bond_expire_year": 6.0,
@@ -86,7 +86,7 @@
       "priority_payment_date": "2026-07-29",
       "rating": "AA",
       "issue_amount_billion": 15.0,
-      "winning_rate": null,
+      "winning_rate": 0.0025411986,
       "listing_date": null,
       "expire_date": "2032-07-29",
       "bond_expire_year": 6.0,
