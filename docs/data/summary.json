@@ -1,20 +1,22 @@
 {
-  "generated_at": "2026-08-03T18:51:52+08:00",
-  "today": "2026-08-03",
+  "generated_at": "2026-08-04T00:16:00+08:00",
+  "today": "2026-08-04",
   "lookback_days": 1200,
-  "total": 217,
+  "total": 219,
   "core_count": 1,
-  "alert_count": 3,
+  "alert_count": 4,
   "stages": {
     "已上市": 206,
-    "发行成功待上市": 10,
+    "发行成功待上市": 12,
     "今日申购/配债": 1
   },
   "risks": {
     "最高": 1,
-    "高": 2,
-    "低": 214
+    "高": 3,
+    "低": 215
   },
-  "source_warnings": [],
+  "source_warnings": [
+    "AKShare bond_cov_issue_cninfo 获取失败：Expecting value: line 1 column 1 (char 0)"
+  ],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。"
 }
