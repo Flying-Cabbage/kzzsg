@@ -1,16 +1,17 @@
 {
-  "generated_at": "2026-08-05T23:56:18+08:00",
-  "today": "2026-08-05",
+  "generated_at": "2026-08-06T11:47:11+08:00",
+  "today": "2026-08-06",
   "lookback_days": 1200,
   "total": 219,
-  "core_count": 0,
+  "core_count": 3,
   "alert_count": 3,
   "stages": {
     "已上市": 207,
-    "发行成功待上市": 12
+    "发行成功待上市": 9,
+    "今日申购/配债": 3
   },
   "risks": {
-    "高": 3,
+    "最高": 3,
     "低": 216
   },
   "source_warnings": [],
