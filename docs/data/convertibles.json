@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T16:20:47+08:00",
+  "generated_at": "2026-08-07T22:47:28+08:00",
   "today": "2026-08-07",
   "lookback_days": 1200,
   "total": 219,
@@ -8764,7 +8764,7 @@
       "rating": "AA",
       "issue_amount_billion": 5.519,
       "winning_rate": 0.00114249,
-      "listing_date": null,
+      "listing_date": "2026-08-12",
       "expire_date": "2032-07-17",
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
