@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T13:21:50+08:00",
+  "generated_at": "2026-08-13T16:41:12+08:00",
   "today": "2026-08-13",
   "lookback_days": 1200,
   "total": 219,
@@ -8644,7 +8644,7 @@
       "rating": "AA",
       "issue_amount_billion": 7.86,
       "winning_rate": 0.0015409788,
-      "listing_date": null,
+      "listing_date": "2026-08-18",
       "expire_date": "2032-08-03",
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%,第二年0.30%,第三年0.60%,第四年1.00%,第五年1.50%,第六年2.00%,到期赎回价为110元/张(含最后一期利息)。",
