@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T15:49:49+08:00",
+  "generated_at": "2026-08-18T22:24:59+08:00",
   "today": "2026-08-18",
   "lookback_days": 1200,
   "total": 221,
@@ -46,7 +46,7 @@
       "priority_payment_date": "2026-08-18",
       "rating": "AA-",
       "issue_amount_billion": 6.075298,
-      "winning_rate": null,
+      "winning_rate": 0.000403098,
       "listing_date": null,
       "expire_date": "2032-08-18",
       "bond_expire_year": 6.0,
