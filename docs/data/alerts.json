@@ -1,61 +1,18 @@
 {
-  "generated_at": "2026-08-19T22:25:22+08:00",
-  "today": "2026-08-19",
+  "generated_at": "2026-08-20T09:56:28+08:00",
+  "today": "2026-08-20",
   "lookback_days": 1200,
   "total": 221,
-  "core_count": 1,
-  "alert_count": 1,
+  "core_count": 0,
+  "alert_count": 0,
   "stages": {
     "已上市": 216,
-    "发行成功待上市": 4,
-    "今日申购/配债": 1
+    "发行成功待上市": 5
   },
   "risks": {
-    "最高": 1,
-    "低": 220
+    "低": 221
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
-  "items": [
-    {
-      "stock_code": "301628",
-      "stock_name": "强达电路",
-      "stage": "今日申购/配债",
-      "stage_score": 80,
-      "announcements": [],
-      "bond_code": "123284",
-      "bond_name": "强达转债",
-      "market": "深交所",
-      "bond_full_name": "2026年深圳市强达电路股份有限公司向不特定对象发行可转换公司债券",
-      "issue_start_date": "2026-08-19",
-      "issue_end_date": "2026-08-19",
-      "planned_issue_amount_million": 55000.0,
-      "actual_issue_amount_million": 55000.0,
-      "issue_price": 100.0,
-      "initial_convert_price": 84.04,
-      "convert_start_date": "2027-02-25",
-      "convert_end_date": "2026-08-18",
-      "online_subscribe_date": "2026-08-19",
-      "online_subscribe_code": "371628",
-      "online_subscribe_name": "强达发债",
-      "winning_result_date": "2026-08-21",
-      "priority_subscribe_date": "2026-08-19",
-      "allotment_price": 100.0,
-      "record_date": "2032-08-18",
-      "priority_payment_date": "2026-08-19",
-      "rating": "AA-",
-      "issue_amount_billion": 5.5,
-      "winning_rate": 0.0006920893,
-      "listing_date": null,
-      "expire_date": "2032-08-19",
-      "bond_expire_year": 6.0,
-      "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
-      "days_to_record": 2191,
-      "days_to_subscribe": 0,
-      "risk_level": "最高",
-      "next_action": "今天操作原股东配售/网上申购，并确认账户资金。",
-      "actual_issue_amount_billion": 5.5,
-      "planned_issue_amount_billion": 5.5
-    }
-  ]
+  "items": []
 }
