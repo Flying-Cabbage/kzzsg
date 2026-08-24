@@ -1,18 +1,60 @@
 {
-  "generated_at": "2026-08-21T22:26:20+08:00",
-  "today": "2026-08-21",
+  "generated_at": "2026-08-24T10:02:18+08:00",
+  "today": "2026-08-24",
   "lookback_days": 1200,
   "total": 220,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
-    "已上市": 215,
-    "发行成功待上市": 5
+    "已上市": 216,
+    "发行成功待上市": 4
   },
   "risks": {
-    "低": 220
+    "高": 1,
+    "低": 219
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
-  "items": []
+  "items": [
+    {
+      "stock_code": "603308",
+      "stock_name": "应流股份",
+      "stage": "已上市",
+      "stage_score": 100,
+      "announcements": [],
+      "bond_code": "113697",
+      "bond_name": "应流转债",
+      "market": "上交所",
+      "bond_full_name": "2025年安徽应流机电股份有限公司向不特定对象发行可转换公司债券",
+      "issue_start_date": "2025-09-19",
+      "issue_end_date": "2025-09-19",
+      "planned_issue_amount_million": 150000.0,
+      "actual_issue_amount_million": 150000.0,
+      "issue_price": 100.0,
+      "initial_convert_price": 30.47,
+      "convert_start_date": "2026-03-25",
+      "convert_end_date": "2025-09-18",
+      "online_subscribe_date": "2025-09-19",
+      "online_subscribe_code": "754308",
+      "online_subscribe_name": "应流发债",
+      "winning_result_date": "2025-09-23",
+      "priority_subscribe_date": "2025-09-19",
+      "allotment_price": 100.0,
+      "record_date": "2026-08-27",
+      "priority_payment_date": "2025-09-19",
+      "rating": "AA+sti",
+      "issue_amount_billion": 15.0,
+      "winning_rate": 0.00384399,
+      "listing_date": "2025-10-22",
+      "expire_date": "2026-08-28",
+      "bond_expire_year": 0.9397,
+      "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
+      "days_to_record": 3,
+      "days_to_subscribe": -339,
+      "risk_level": "高",
+      "next_action": "距离股权登记日还有 3 天，重点核对正股风险和配债资金。",
+      "actual_issue_amount_billion": 15.0,
+      "planned_issue_amount_billion": 15.0
+    }
+  ]
 }
