@@ -1,16 +1,17 @@
 {
-  "generated_at": "2026-08-26T22:36:32+08:00",
-  "today": "2026-08-26",
+  "generated_at": "2026-08-27T18:01:46+08:00",
+  "today": "2026-08-27",
   "lookback_days": 1200,
   "total": 220,
-  "core_count": 0,
+  "core_count": 1,
   "alert_count": 1,
   "stages": {
-    "已上市": 218,
-    "发行成功待上市": 2
+    "已上市": 217,
+    "发行成功待上市": 2,
+    "今日股权登记": 1
   },
   "risks": {
-    "高": 1,
+    "最高": 1,
     "低": 219
   },
   "source_warnings": [],
@@ -19,8 +20,8 @@
     {
       "stock_code": "603308",
       "stock_name": "应流股份",
-      "stage": "已上市",
-      "stage_score": 100,
+      "stage": "今日股权登记",
+      "stage_score": 78,
       "announcements": [],
       "bond_code": "113697",
       "bond_name": "应流转债",
@@ -49,10 +50,10 @@
       "expire_date": "2026-08-28",
       "bond_expire_year": 0.9397,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
-      "days_to_record": 1,
-      "days_to_subscribe": -341,
-      "risk_level": "高",
-      "next_action": "距离股权登记日还有 1 天，重点核对正股风险和配债资金。",
+      "days_to_record": 0,
+      "days_to_subscribe": -342,
+      "risk_level": "最高",
+      "next_action": "今天收盘前持有正股，才有本次原股东配债资格。",
       "actual_issue_amount_billion": 15.0,
       "planned_issue_amount_billion": 15.0
     }
