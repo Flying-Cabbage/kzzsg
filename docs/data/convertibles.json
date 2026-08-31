@@ -1,20 +1,42 @@
 {
-  "generated_at": "2026-08-31T18:04:27+08:00",
+  "generated_at": "2026-08-31T23:03:06+08:00",
   "today": "2026-08-31",
   "lookback_days": 1200,
-  "total": 220,
+  "total": 221,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
     "已上市": 218,
-    "发行成功待上市": 2
+    "发行成功待上市": 3
   },
   "risks": {
+    "高": 1,
     "低": 220
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
   "items": [
+    {
+      "stock_code": "603339",
+      "stock_name": "四方科技",
+      "stage": "发行成功待上市",
+      "stage_score": 90,
+      "announcements": [],
+      "bond_code": "113710",
+      "bond_name": "四方转债",
+      "rating": "AA",
+      "online_subscribe_date": "2026-09-03",
+      "issue_amount_billion": 10.23395,
+      "winning_rate": null,
+      "listing_date": null,
+      "expire_date": "2032-09-03",
+      "bond_expire_year": 6.0,
+      "interest_rate_explain": "本次发行的可转债票面利率为:第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
+      "days_to_record": null,
+      "days_to_subscribe": 3,
+      "risk_level": "高",
+      "next_action": "距离网上申购/优先配售日还有 3 天。"
+    },
     {
       "stock_code": "605123",
       "stock_name": "派克新材",

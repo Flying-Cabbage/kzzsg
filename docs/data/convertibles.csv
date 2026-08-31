@@ -1,4 +1,5 @@
 ﻿stage,risk_level,stock_code,stock_name,bond_code,bond_name,issue_amount_billion,planned_issue_amount_billion,actual_issue_amount_billion,record_date,priority_subscribe_date,online_subscribe_date,priority_payment_date,winning_result_date,listing_date,convert_start_date,convert_end_date,registered_date,issue_announce_date,latest_announcement_date,latest_title,latest_url,next_action
+发行成功待上市,高,603339,四方科技,113710,四方转债,10.23395,,,,,2026-09-03,,,,,,,,,,,距离网上申购/优先配售日还有 3 天。
 已上市,低,605123,派克新材,111026,派克转债,15.8,15.8,15.8,2032-08-05,2026-08-06,2026-08-06,2026-08-06,2026-08-10,2026-08-25,2027-02-12,2026-08-05,,,,,,距离股权登记日还有 2166 天，重点核对正股风险和配债资金。
 已上市,低,688605,先锋精科,118076,先锋转债,7.5,7.5,7.5,2032-08-05,2026-08-06,2026-08-06,2026-08-06,2026-08-10,2026-08-26,2027-02-12,2026-08-05,,,,,,距离股权登记日还有 2166 天，重点核对正股风险和配债资金。
 已上市,低,301565,中仑新材,123281,中仑转债,10.68,10.68,10.68,2032-08-05,2026-08-06,2026-08-06,2026-08-06,2026-08-10,2026-08-24,2027-02-15,2026-08-05,,,,,,距离股权登记日还有 2166 天，重点核对正股风险和配债资金。
