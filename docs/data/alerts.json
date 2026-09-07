@@ -1,18 +1,41 @@
 {
-  "generated_at": "2026-09-07T16:38:16+08:00",
+  "generated_at": "2026-09-07T21:29:32+08:00",
   "today": "2026-09-07",
   "lookback_days": 1200,
-  "total": 221,
+  "total": 222,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
-    "已上市": 219,
+    "已上市": 220,
     "发行成功待上市": 2
   },
   "risks": {
+    "高": 1,
     "低": 221
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
-  "items": []
+  "items": [
+    {
+      "stock_code": "300727",
+      "stock_name": "润禾材料",
+      "stage": "已上市",
+      "stage_score": 100,
+      "announcements": [],
+      "bond_code": "123285",
+      "bond_name": "润禾转02",
+      "rating": "A+",
+      "online_subscribe_date": "2026-09-10",
+      "issue_amount_billion": 2.9235,
+      "winning_rate": 0.000613369,
+      "listing_date": "2022-08-11",
+      "expire_date": "2025-04-14",
+      "bond_expire_year": 2.7342,
+      "interest_rate_explain": "第一年0.40%,第二年0.60%,第三年1.20%,第四年1.80%,第五年2.50%,第六年3.00%。",
+      "days_to_record": null,
+      "days_to_subscribe": 3,
+      "risk_level": "高",
+      "next_action": "距离网上申购/优先配售日还有 3 天。"
+    }
+  ]
 }
