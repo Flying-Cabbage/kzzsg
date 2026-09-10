@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T01:27:21+08:00",
+  "generated_at": "2026-09-10T12:56:09+08:00",
   "today": "2026-09-10",
   "lookback_days": 1200,
   "total": 222,
@@ -2641,7 +2641,7 @@
       "winning_result_date": "2025-09-01",
       "priority_subscribe_date": "2025-08-28",
       "allotment_price": 100.0,
-      "record_date": "2031-08-27",
+      "record_date": "2026-10-09",
       "priority_payment_date": "2025-08-28",
       "rating": "AA-",
       "issue_amount_billion": 3.3,
@@ -2650,10 +2650,10 @@
       "expire_date": "2024-12-04",
       "bond_expire_year": 2.6822,
       "interest_rate_explain": "第一年为0.40%,第二年为0.60%,第三年为1.0%,第四年为1.50%,第五年为2.00%,第六年为2.50%。",
-      "days_to_record": 1812,
+      "days_to_record": 29,
       "days_to_subscribe": -378,
       "risk_level": "低",
-      "next_action": "距离股权登记日还有 1812 天，重点核对正股风险和配债资金。",
+      "next_action": "距离股权登记日还有 29 天，重点核对正股风险和配债资金。",
       "actual_issue_amount_billion": 4.5,
       "planned_issue_amount_billion": 4.5
     },
