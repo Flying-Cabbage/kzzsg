@@ -1,20 +1,42 @@
 {
-  "generated_at": "2026-09-14T17:15:11+08:00",
+  "generated_at": "2026-09-14T21:57:40+08:00",
   "today": "2026-09-14",
   "lookback_days": 1200,
-  "total": 222,
+  "total": 223,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
-    "已上市": 221,
+    "已上市": 222,
     "发行成功待上市": 1
   },
   "risks": {
+    "高": 1,
     "低": 222
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
   "items": [
+    {
+      "stock_code": "002997",
+      "stock_name": "瑞鹄模具",
+      "stage": "已上市",
+      "stage_score": 100,
+      "announcements": [],
+      "bond_code": "127116",
+      "bond_name": "瑞鹄转02",
+      "rating": "A+",
+      "online_subscribe_date": "2026-09-17",
+      "issue_amount_billion": 4.398,
+      "winning_rate": 0.0006807533,
+      "listing_date": "2022-07-27",
+      "expire_date": "2024-04-01",
+      "bond_expire_year": 1.7781,
+      "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.1%、第四年1.8%、第五年2.5%、第六年3.0%。",
+      "days_to_record": null,
+      "days_to_subscribe": 3,
+      "risk_level": "高",
+      "next_action": "距离网上申购/优先配售日还有 3 天。"
+    },
     {
       "stock_code": "300727",
       "stock_name": "润禾材料",
