@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:29:21+08:00",
+  "generated_at": "2026-09-18T20:13:05+08:00",
   "today": "2026-09-18",
   "lookback_days": 1200,
   "total": 223,
@@ -12,7 +12,9 @@
   "risks": {
     "低": 223
   },
-  "source_warnings": [],
+  "source_warnings": [
+    "AKShare bond_cov_issue_cninfo 获取失败：'records'"
+  ],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
   "items": []
 }
