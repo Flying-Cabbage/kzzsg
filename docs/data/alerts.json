@@ -1,18 +1,60 @@
 {
-  "generated_at": "2026-10-05T23:56:52+08:00",
-  "today": "2026-10-05",
+  "generated_at": "2026-10-06T05:24:04+08:00",
+  "today": "2026-10-06",
   "lookback_days": 1200,
   "total": 223,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
     "已上市": 217,
     "发行成功待上市": 6
   },
   "risks": {
-    "低": 223
+    "高": 1,
+    "低": 222
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
-  "items": []
+  "items": [
+    {
+      "stock_code": "300843",
+      "stock_name": "胜蓝股份",
+      "stage": "已上市",
+      "stage_score": 100,
+      "announcements": [],
+      "bond_code": "123258",
+      "bond_name": "胜蓝转02",
+      "market": "深交所",
+      "bond_full_name": "2025年胜蓝科技股份有限公司向不特定对象发行可转换公司债券",
+      "issue_start_date": "2025-08-28",
+      "issue_end_date": "2025-08-28",
+      "planned_issue_amount_million": 45000.0,
+      "actual_issue_amount_million": 45000.0,
+      "issue_price": 100.0,
+      "initial_convert_price": 54.56,
+      "convert_start_date": "2026-03-03",
+      "convert_end_date": "2025-08-27",
+      "online_subscribe_date": "2025-08-28",
+      "online_subscribe_code": "370843",
+      "online_subscribe_name": "胜蓝发债",
+      "winning_result_date": "2025-09-01",
+      "priority_subscribe_date": "2025-08-28",
+      "allotment_price": 100.0,
+      "record_date": "2026-10-09",
+      "priority_payment_date": "2025-08-28",
+      "rating": "AA-",
+      "issue_amount_billion": 3.3,
+      "winning_rate": 0.0003930271,
+      "listing_date": "2022-04-22",
+      "expire_date": "2024-12-04",
+      "bond_expire_year": 2.6822,
+      "interest_rate_explain": "第一年为0.40%,第二年为0.60%,第三年为1.0%,第四年为1.50%,第五年为2.00%,第六年为2.50%。",
+      "days_to_record": 3,
+      "days_to_subscribe": -404,
+      "risk_level": "高",
+      "next_action": "距离股权登记日还有 3 天，重点核对正股风险和配债资金。",
+      "actual_issue_amount_billion": 4.5,
+      "planned_issue_amount_billion": 4.5
+    }
+  ]
 }
