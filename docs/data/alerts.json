@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T16:52:13+08:00",
+  "generated_at": "2026-10-21T20:54:33+08:00",
   "today": "2026-10-21",
   "lookback_days": 1200,
   "total": 221,
@@ -46,7 +46,7 @@
       "priority_payment_date": "2026-10-21",
       "rating": "AAsti",
       "issue_amount_billion": 6.0,
-      "winning_rate": null,
+      "winning_rate": 0.00156246,
       "listing_date": null,
       "expire_date": "2032-10-21",
       "bond_expire_year": 6.0,
