@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-26T17:21:14+08:00",
+  "generated_at": "2026-10-26T22:10:56+08:00",
   "today": "2026-10-26",
   "lookback_days": 1200,
-  "total": 220,
+  "total": 221,
   "core_count": 0,
-  "alert_count": 1,
+  "alert_count": 2,
   "stages": {
     "已上市": 214,
-    "发行成功待上市": 6
+    "发行成功待上市": 7
   },
   "risks": {
-    "高": 1,
+    "高": 2,
     "低": 219
   },
   "source_warnings": [],
