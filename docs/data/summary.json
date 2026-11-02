@@ -1,19 +1,17 @@
 {
-  "generated_at": "2026-11-02T19:43:05+08:00",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T01:01:02+08:00",
+  "today": "2026-11-03",
   "lookback_days": 1200,
-  "total": 213,
+  "total": 211,
   "core_count": 0,
   "alert_count": 0,
   "stages": {
-    "已上市": 208,
-    "发行成功待上市": 5
+    "已上市": 207,
+    "发行成功待上市": 4
   },
   "risks": {
-    "低": 213
+    "低": 211
   },
-  "source_warnings": [
-    "AKShare bond_cov_issue_cninfo 获取失败：HTTPConnectionPool(host='webapi.cninfo.com.cn', port=80): Read timed out."
-  ],
+  "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。"
 }
