@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T04:55:12+08:00",
+  "generated_at": "2026-11-06T15:02:44+08:00",
   "today": "2026-11-06",
   "lookback_days": 1200,
   "total": 209,
@@ -12,8 +12,6 @@
   "risks": {
     "低": 209
   },
-  "source_warnings": [
-    "AKShare bond_cov_issue_cninfo 获取失败：HTTPConnectionPool(host='webapi.cninfo.com.cn', port=80): Max retries exceeded with url: /api/sysapi/p_sysapi1123?sdate=2023-07-25&edate=2026-11-06 (Caused by NameResolutionError(\"HTTPConnection(host='webapi.cninfo.com.cn', port=80): Failed to resolve 'webapi.cninfo.com.cn' ([Errno -5] No address associated with hostname)\"))"
-  ],
+  "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。"
 }
