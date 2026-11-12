@@ -1,16 +1,17 @@
 {
-  "generated_at": "2026-11-12T23:57:02+08:00",
-  "today": "2026-11-12",
+  "generated_at": "2026-11-13T05:16:11+08:00",
+  "today": "2026-11-13",
   "lookback_days": 1200,
-  "total": 201,
+  "total": 199,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
     "已上市": 197,
-    "发行成功待上市": 4
+    "发行成功待上市": 2
   },
   "risks": {
-    "低": 201
+    "高": 1,
+    "低": 198
   },
   "source_warnings": [],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。"
