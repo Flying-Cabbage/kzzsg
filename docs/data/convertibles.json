@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-11-16T20:00:36+08:00",
-  "today": "2026-11-16",
+  "generated_at": "2026-11-17T00:57:23+08:00",
+  "today": "2026-11-17",
   "lookback_days": 1200,
-  "total": 198,
-  "core_count": 1,
-  "alert_count": 1,
+  "total": 197,
+  "core_count": 0,
+  "alert_count": 0,
   "stages": {
-    "已上市": 197,
-    "今日申购/配债": 1
+    "已上市": 196,
+    "发行成功待上市": 1
   },
   "risks": {
-    "最高": 1,
     "低": 197
   },
   "source_warnings": [
@@ -19,27 +18,6 @@
   ],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
   "items": [
-    {
-      "stock_code": "605016",
-      "stock_name": "百龙创园",
-      "stage": "今日申购/配债",
-      "stage_score": 80,
-      "announcements": [],
-      "bond_code": "111027",
-      "bond_name": "百龙转债",
-      "rating": "AA",
-      "online_subscribe_date": "2026-11-16",
-      "issue_amount_billion": 7.48149,
-      "winning_rate": 0.00235147,
-      "listing_date": null,
-      "expire_date": "2032-11-16",
-      "bond_expire_year": 6.0,
-      "interest_rate_explain": "第一年0.1%、第二年0.3%、第三年0.6%、第四年1.0%、第五年1.5%、第六年2.0%。",
-      "days_to_record": null,
-      "days_to_subscribe": 0,
-      "risk_level": "最高",
-      "next_action": "今天操作原股东配售/网上申购，并确认账户资金。"
-    },
     {
       "stock_code": "300181",
       "stock_name": "佐力药业",
@@ -57,7 +35,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -18,
+      "days_to_subscribe": -19,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -78,7 +56,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.10%、第二年为0.30%、第三年为0.60%、第四年为1.00%、第五年为1.50%、第六年为2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -20,
+      "days_to_subscribe": -21,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -99,7 +77,7 @@
       "bond_expire_year": 3.4712,
       "interest_rate_explain": "第一年到第五年的年利率分别为:第一年0.8%、第二年1.1%、第三年1.4%、第四年1.7%、第五年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -25,
+      "days_to_subscribe": -26,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -120,7 +98,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -26,
+      "days_to_subscribe": -27,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -141,7 +119,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -27,
+      "days_to_subscribe": -28,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -162,7 +140,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%,第二年0.40%,第三年0.60%,第四年1.00%,第五年1.50%,第六年2.00%,到期赎回价为109元/张(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -31,
+      "days_to_subscribe": -32,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -183,7 +161,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.20%、第三年0.50%、第四年0.90%、第五年1.30%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -32,
+      "days_to_subscribe": -33,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -204,7 +182,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -48,
+      "days_to_subscribe": -49,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -225,7 +203,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%,第二年0.30%,第三年0.60%,第四年1.00%,第五年1.50%,第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -48,
+      "days_to_subscribe": -49,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -246,7 +224,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.2%、第二年为0.4%、第三年为0.6%、第四年为1.0%、第五年为1.5%、第六年为2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -49,
+      "days_to_subscribe": -50,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -267,7 +245,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -49,
+      "days_to_subscribe": -50,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -288,7 +266,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.1%、第二年为0.3%、第三年为0.6%、第四年为1.0%、第五年为1.5%、第六年为2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -54,
+      "days_to_subscribe": -55,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -309,7 +287,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%,第二年0.40%,第三年0.60%,第四年1.00%,第五年1.50%,第六年1.80%,到期赎回价为110元/张(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -54,
+      "days_to_subscribe": -55,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -330,7 +308,7 @@
       "bond_expire_year": 1.7781,
       "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.1%、第四年1.8%、第五年2.5%、第六年3.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -60,
+      "days_to_subscribe": -61,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -351,7 +329,7 @@
       "bond_expire_year": 2.7342,
       "interest_rate_explain": "第一年0.40%,第二年0.60%,第三年1.20%,第四年1.80%,第五年2.50%,第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -67,
+      "days_to_subscribe": -68,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -372,7 +350,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为:第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -74,
+      "days_to_subscribe": -75,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -393,7 +371,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -89,
+      "days_to_subscribe": -90,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -414,7 +392,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -90,
+      "days_to_subscribe": -91,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -435,7 +413,7 @@
       "bond_expire_year": 1.5096,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -91,
+      "days_to_subscribe": -92,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -456,7 +434,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.1%、第二年0.3%、第三年0.6%、第四年1.0%、第五年1.5%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -102,
+      "days_to_subscribe": -103,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -477,7 +455,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -102,
+      "days_to_subscribe": -103,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -498,7 +476,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -102,
+      "days_to_subscribe": -103,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -519,7 +497,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -104,
+      "days_to_subscribe": -105,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -540,7 +518,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%,第二年0.30%,第三年0.60%,第四年1.00%,第五年1.50%,第六年2.00%,到期赎回价为110元/张(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -105,
+      "days_to_subscribe": -106,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -561,7 +539,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -109,
+      "days_to_subscribe": -110,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -582,7 +560,7 @@
       "bond_expire_year": 1.7836,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -109,
+      "days_to_subscribe": -110,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -603,7 +581,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.10%,第二年0.30%,第三年0.60%,第四年1.00%,第五年1.50%,第六年2.00%,到期赎回价为110元/张(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -110,
+      "days_to_subscribe": -111,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -624,7 +602,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -110,
+      "days_to_subscribe": -111,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -645,7 +623,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -111,
+      "days_to_subscribe": -112,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -666,7 +644,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.20%、第五年1.60%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -115,
+      "days_to_subscribe": -116,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -687,7 +665,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -115,
+      "days_to_subscribe": -116,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -708,7 +686,7 @@
       "bond_expire_year": 1.589,
       "interest_rate_explain": "票面利率:第一年为0.5%,第二年为0.8%,第三年为1.2%,第四年为3.0%,第五年为3.6%,第六年为4.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -119,
+      "days_to_subscribe": -120,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -729,7 +707,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -122,
+      "days_to_subscribe": -123,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -750,7 +728,7 @@
       "bond_expire_year": 1.6521,
       "interest_rate_explain": "第一年0.40%、第二年0.60%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -124,
+      "days_to_subscribe": -125,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -771,7 +749,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -125,
+      "days_to_subscribe": -126,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -792,7 +770,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -130,
+      "days_to_subscribe": -131,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -813,7 +791,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.1%、第二年0.3%、第三年0.5%、第四年1.0%、第五年1.5%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -136,
+      "days_to_subscribe": -137,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -834,7 +812,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.2%、第二年0.4%、第三年0.8%、第四年1.5%、第五年2.0%、第六年2.5%。",
       "days_to_record": null,
-      "days_to_subscribe": -143,
+      "days_to_subscribe": -144,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -855,7 +833,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.2%、第二年0.4%、第三年0.6%、第四年1.0%、第五年1.5%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -143,
+      "days_to_subscribe": -144,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -876,7 +854,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -144,
+      "days_to_subscribe": -145,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -897,7 +875,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.5%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -145,
+      "days_to_subscribe": -146,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -918,7 +896,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -145,
+      "days_to_subscribe": -146,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -939,7 +917,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.1%、第二年0.3%、第三年0.6%、第四年1.0%、第五年1.5%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -146,
+      "days_to_subscribe": -147,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -960,7 +938,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -151,
+      "days_to_subscribe": -152,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -981,7 +959,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -152,
+      "days_to_subscribe": -153,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1002,7 +980,7 @@
       "bond_expire_year": 2.0493,
       "interest_rate_explain": "第一年0.30%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -154,
+      "days_to_subscribe": -155,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1023,7 +1001,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.2%,第二年0.4%,第三年0.6%,第四年1.0%,第五年1.5%,第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -154,
+      "days_to_subscribe": -155,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1044,7 +1022,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -158,
+      "days_to_subscribe": -159,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1065,7 +1043,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -158,
+      "days_to_subscribe": -159,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1086,7 +1064,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -159,
+      "days_to_subscribe": -160,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1107,7 +1085,7 @@
       "bond_expire_year": 3.474,
       "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.0%、第四年1.5%、第五年2.5%、第六年3.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -161,
+      "days_to_subscribe": -162,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1128,7 +1106,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -165,
+      "days_to_subscribe": -166,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1149,7 +1127,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.2%、第二年0.4%、第三年0.6%、第四年1.0%、第五年1.5%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -167,
+      "days_to_subscribe": -168,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1170,7 +1148,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -168,
+      "days_to_subscribe": -169,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1191,7 +1169,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.2%,第二年0.4%,第三年0.6%,第四年1.0%,第五年1.5%,第六年1.8%。",
       "days_to_record": null,
-      "days_to_subscribe": -210,
+      "days_to_subscribe": -211,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1212,7 +1190,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.2%、第二年0.40%、第三年0.6%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -213,
+      "days_to_subscribe": -214,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1233,7 +1211,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -214,
+      "days_to_subscribe": -215,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1254,7 +1232,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -214,
+      "days_to_subscribe": -215,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1275,7 +1253,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -243,
+      "days_to_subscribe": -244,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1296,7 +1274,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率设定为:第一年0.30%、第二年0.50%、第三年1.00%、第四年1.60%、第五年2.00%、第六年2.80%。到期赎回价为111.00元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -243,
+      "days_to_subscribe": -244,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1317,7 +1295,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.2%、第二年为0.4%、第三年为0.6%、第四年为1.0%、第五年为1.5%、第六年为2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -252,
+      "days_to_subscribe": -253,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1338,7 +1316,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.2%、第二年0.4%、第三年0.8%、第四年1.5%、第五年2.0%、第六年2.5%。",
       "days_to_record": null,
-      "days_to_subscribe": -258,
+      "days_to_subscribe": -259,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1359,7 +1337,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -259,
+      "days_to_subscribe": -260,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1380,7 +1358,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -284,
+      "days_to_subscribe": -285,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1401,7 +1379,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -298,
+      "days_to_subscribe": -299,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1422,7 +1400,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -298,
+      "days_to_subscribe": -299,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1443,7 +1421,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.2%,第二年0.4%,第三年0.6%,第四年1.5%,第五年1.8%,第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -304,
+      "days_to_subscribe": -305,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1464,7 +1442,7 @@
       "bond_expire_year": 3.3479,
       "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.1%、第四年1.8%、第五年2.3%、第六年2.8%。",
       "days_to_record": null,
-      "days_to_subscribe": -304,
+      "days_to_subscribe": -305,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1485,7 +1463,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次票面利率第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -312,
+      "days_to_subscribe": -313,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1506,7 +1484,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%,第二年0.40%,第三年0.60%,第四年1.00%,第五年1.50%,第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -325,
+      "days_to_subscribe": -326,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1527,7 +1505,7 @@
       "bond_expire_year": 1.6986,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -326,
+      "days_to_subscribe": -327,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1548,7 +1526,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -336,
+      "days_to_subscribe": -337,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1569,7 +1547,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -339,
+      "days_to_subscribe": -340,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1590,7 +1568,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -340,
+      "days_to_subscribe": -341,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1611,7 +1589,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年为0.2%、第二年为0.4%、第三年为0.6%、第四年为1.0%、第五年为1.5%、第六年为1.8%。",
       "days_to_record": null,
-      "days_to_subscribe": -340,
+      "days_to_subscribe": -341,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1632,7 +1610,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%,第二年0.40%,第三年0.80%,第四年1.50%,第五年2.00%,第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -346,
+      "days_to_subscribe": -347,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1653,7 +1631,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -360,
+      "days_to_subscribe": -361,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1674,7 +1652,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -367,
+      "days_to_subscribe": -368,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1695,7 +1673,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -374,
+      "days_to_subscribe": -375,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1716,7 +1694,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -378,
+      "days_to_subscribe": -379,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1737,7 +1715,7 @@
       "bond_expire_year": 0.6274,
       "interest_rate_explain": "第一年0.30%,第二年0.40%,第三年1.00%,第四年1.50%,第五年2.00%,第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -395,
+      "days_to_subscribe": -396,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1758,7 +1736,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.4%、第二年为0.6%、第三年为1.0%、第四年为1.5%、第五年为1.8%、第六年为2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -399,
+      "days_to_subscribe": -400,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1779,7 +1757,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.40%、第二年0.60%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -416,
+      "days_to_subscribe": -417,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1800,7 +1778,7 @@
       "bond_expire_year": 0.9397,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -423,
+      "days_to_subscribe": -424,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1821,7 +1799,7 @@
       "bond_expire_year": 2.6822,
       "interest_rate_explain": "第一年为0.40%,第二年为0.60%,第三年为1.0%,第四年为1.50%,第五年为2.00%,第六年为2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -445,
+      "days_to_subscribe": -446,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1842,7 +1820,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -453,
+      "days_to_subscribe": -454,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1863,7 +1841,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -458,
+      "days_to_subscribe": -459,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1884,7 +1862,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.20%、第二年0.40%、第三年0.80%、第四年1.20%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -467,
+      "days_to_subscribe": -468,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1905,7 +1883,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.2%、第二年为0.4%、第三年为0.8%、第四年为1.2%、第五年为1.6%、第六年为2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -495,
+      "days_to_subscribe": -496,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1926,7 +1904,7 @@
       "bond_expire_year": 0.9753,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.20%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -501,
+      "days_to_subscribe": -502,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1947,7 +1925,7 @@
       "bond_expire_year": 2.3397,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -503,
+      "days_to_subscribe": -504,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1968,7 +1946,7 @@
       "bond_expire_year": 0.9726,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率设定为:第一年0.20%,第二年0.40%,第三年0.80%,第四年1.50%,第五年2.00%,第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -508,
+      "days_to_subscribe": -509,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -1989,7 +1967,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -514,
+      "days_to_subscribe": -515,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2010,7 +1988,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.90%、第六年2.30%。到期赎回价为113元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -516,
+      "days_to_subscribe": -517,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2031,7 +2009,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.2%、第二年0.4%、第三年0.6%、第四年1.5%、第五年1.8%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -518,
+      "days_to_subscribe": -519,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2052,7 +2030,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.80%、第六年2.00%。到期赎回价为110.00元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -518,
+      "days_to_subscribe": -519,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2073,7 +2051,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.2%、第二年0.4%、第三年0.8%、第四年1.0%、第五年1.6%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -523,
+      "days_to_subscribe": -524,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2094,7 +2072,7 @@
       "bond_expire_year": 0.9562,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -536,
+      "days_to_subscribe": -537,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2115,7 +2093,7 @@
       "bond_expire_year": 0.9836,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.10%,第二年0.30%,第三年0.60%,第四年1.00%,第五年1.50%,第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -586,
+      "days_to_subscribe": -587,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2136,7 +2114,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -587,
+      "days_to_subscribe": -588,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2157,7 +2135,7 @@
       "bond_expire_year": 0.9699,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -588,
+      "days_to_subscribe": -589,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2178,7 +2156,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -593,
+      "days_to_subscribe": -594,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2199,7 +2177,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.20%、第二年为0.40%、第三年为1.00%、第四年为1.50%、第五年为2.00%、第六年为3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -598,
+      "days_to_subscribe": -599,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2220,7 +2198,7 @@
       "bond_expire_year": 1.0849,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -602,
+      "days_to_subscribe": -603,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2241,7 +2219,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.3%、第二年0.5%、第三年0.8%、第四年1.2%、第五年1.8%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -608,
+      "days_to_subscribe": -609,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2262,7 +2240,7 @@
       "bond_expire_year": 1.4055,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.20%、第五年1.60%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -608,
+      "days_to_subscribe": -609,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2283,7 +2261,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.90%、第六年2.30%。",
       "days_to_record": null,
-      "days_to_subscribe": -613,
+      "days_to_subscribe": -614,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2304,7 +2282,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.2%、第二年0.4%、第三年0.8%、第四年1.5%、第五年2.0%、第六年2.5%。",
       "days_to_record": null,
-      "days_to_subscribe": -613,
+      "days_to_subscribe": -614,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2325,7 +2303,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年0.80%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -676,
+      "days_to_subscribe": -677,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2346,7 +2324,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年为0.20%,第二年为0.40%,第三年为0.80%,第四年为1.50%,第五年为1.90%,第六年为2.30%。",
       "days_to_record": null,
-      "days_to_subscribe": -678,
+      "days_to_subscribe": -679,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2367,7 +2345,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -691,
+      "days_to_subscribe": -692,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2388,7 +2366,7 @@
       "bond_expire_year": 1.5973,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。到期赎回价为115.00元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -693,
+      "days_to_subscribe": -694,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2409,7 +2387,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.20%、第五年1.60%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -718,
+      "days_to_subscribe": -719,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2430,7 +2408,7 @@
       "bond_expire_year": 0.9068,
       "interest_rate_explain": "第一年0.20%,第二年0.40%,第三年0.60%,第四年1.50%,第五年1.80%,第六年2.00%。到期赎回价为108.00元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -728,
+      "days_to_subscribe": -729,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2451,7 +2429,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -739,
+      "days_to_subscribe": -740,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2472,7 +2450,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。到期赎回价为110元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -746,
+      "days_to_subscribe": -747,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2493,7 +2471,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -749,
+      "days_to_subscribe": -750,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2514,7 +2492,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -753,
+      "days_to_subscribe": -754,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2535,7 +2513,7 @@
       "bond_expire_year": 1.2055,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -753,
+      "days_to_subscribe": -754,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2556,7 +2534,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.2%、第二年0.4%、第三年0.6%、第四年1.5%、第五年1.8%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -760,
+      "days_to_subscribe": -761,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2577,7 +2555,7 @@
       "bond_expire_year": 1.0959,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -760,
+      "days_to_subscribe": -761,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2598,7 +2576,7 @@
       "bond_expire_year": 0.9452,
       "interest_rate_explain": "第一年为0.20%、第二年为0.40%、第三年为0.60%、第四年为1.50%、第五年为1.80%、第六年为2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -817,
+      "days_to_subscribe": -818,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2619,7 +2597,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -817,
+      "days_to_subscribe": -818,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2640,7 +2618,7 @@
       "bond_expire_year": 1.6658,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.50%、第二年0.70%、第三年1.00%、第四年1.70%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -822,
+      "days_to_subscribe": -823,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2661,7 +2639,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.3%、第二年0.5%、第三年1.0%、第四年1.5%、第五年1.8%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -822,
+      "days_to_subscribe": -823,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2682,7 +2660,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.40%、第二年0.60%、第三年1.00%、第四年1.60%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -824,
+      "days_to_subscribe": -825,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2703,7 +2681,7 @@
       "bond_expire_year": 0.9671,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.50%、第二年0.70%、第三年1.00%、第四年1.80%、第五年2.50%、第六年3.00%。到期赎回价为115.00元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -825,
+      "days_to_subscribe": -826,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2724,7 +2702,7 @@
       "bond_expire_year": 1.3534,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -826,
+      "days_to_subscribe": -827,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2745,7 +2723,7 @@
       "bond_expire_year": 1.7233,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -831,
+      "days_to_subscribe": -832,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2766,7 +2744,7 @@
       "bond_expire_year": 1.1644,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -837,
+      "days_to_subscribe": -838,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2787,7 +2765,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.30%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -843,
+      "days_to_subscribe": -844,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2808,7 +2786,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.0%、第四年1.5%、第五年2.5%、第六年3.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -847,
+      "days_to_subscribe": -848,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2829,7 +2807,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -859,
+      "days_to_subscribe": -860,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2850,7 +2828,7 @@
       "bond_expire_year": 1.6575,
       "interest_rate_explain": "第一年0.30%、第二年0.50%、第三年1.00%、第四年1.70%、第五年2.30%、第六年2.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -861,
+      "days_to_subscribe": -862,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2871,7 +2849,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.10%、第二年0.30%、第三年0.60%、第四年1.00%、第五年1.50%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -864,
+      "days_to_subscribe": -865,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2892,7 +2870,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -867,
+      "days_to_subscribe": -868,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2913,7 +2891,7 @@
       "bond_expire_year": 1.7452,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年为0.2%,第二年为0.4%,第三年为0.8%,第四年为1.5%,第五年为2.0%,第六年为2.5%。",
       "days_to_record": null,
-      "days_to_subscribe": -867,
+      "days_to_subscribe": -868,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2934,7 +2912,7 @@
       "bond_expire_year": 1.2685,
       "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.0%、第四年1.5%、第五年1.8%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -885,
+      "days_to_subscribe": -886,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2955,7 +2933,7 @@
       "bond_expire_year": 1.9315,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -943,
+      "days_to_subscribe": -944,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2976,7 +2954,7 @@
       "bond_expire_year": 1.0219,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -959,
+      "days_to_subscribe": -960,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -2997,7 +2975,7 @@
       "bond_expire_year": 1.1562,
       "interest_rate_explain": "第一年0.4%、第二年0.6%、第三年1.0%、第四年1.5%、第五年1.8%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -963,
+      "days_to_subscribe": -964,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3018,7 +2996,7 @@
       "bond_expire_year": 0.7589,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.40%、第二年0.60%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -987,
+      "days_to_subscribe": -988,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3039,7 +3017,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1019,
+      "days_to_subscribe": -1020,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3060,7 +3038,7 @@
       "bond_expire_year": 1.8932,
       "interest_rate_explain": "第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1020,
+      "days_to_subscribe": -1021,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3081,7 +3059,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.30%、第二年0.50%、第三年1.00%、第四年1.70%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1026,
+      "days_to_subscribe": -1027,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3102,7 +3080,7 @@
       "bond_expire_year": 2.1973,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1032,
+      "days_to_subscribe": -1033,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3123,7 +3101,7 @@
       "bond_expire_year": 1.2137,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.40%、第二年0.60%、第三年1.00%、第四年1.50%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1040,
+      "days_to_subscribe": -1041,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3144,7 +3122,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1047,
+      "days_to_subscribe": -1048,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3165,7 +3143,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%,第二年0.50%,第三年1.00%,第四年1.50%,第五年1.80%,第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1048,
+      "days_to_subscribe": -1049,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3186,7 +3164,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1053,
+      "days_to_subscribe": -1054,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3207,7 +3185,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%,第二年0.40%,第三年0.60%,第四年1.50%,第五年1.80%,第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1057,
+      "days_to_subscribe": -1058,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3228,7 +3206,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。到期赎回价为115元(含最后一期利息)。",
       "days_to_record": null,
-      "days_to_subscribe": -1057,
+      "days_to_subscribe": -1058,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3249,7 +3227,7 @@
       "bond_expire_year": 2.4329,
       "interest_rate_explain": "第一年0.20%,第二年0.50%,第三年0.80%,第四年1.50%,第五年1.80%,第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1060,
+      "days_to_subscribe": -1061,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3270,7 +3248,7 @@
       "bond_expire_year": 1.6877,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.90%、第六年2.10%。",
       "days_to_record": null,
-      "days_to_subscribe": -1060,
+      "days_to_subscribe": -1061,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3291,7 +3269,7 @@
       "bond_expire_year": 0.6411,
       "interest_rate_explain": "票面利率:第一年0.30%,第二年0.50%,第三年1.00%,第四年1.50%,第五年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -1060,
+      "days_to_subscribe": -1061,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3312,7 +3290,7 @@
       "bond_expire_year": 1.2685,
       "interest_rate_explain": "第一年为0.3%、第二年为0.5%、第三年为1.0%、第四年为1.5%、第五年为1.8%、第六年为2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -1061,
+      "days_to_subscribe": -1062,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3333,7 +3311,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.30%,第二年为0.50%,第三年为1.00%,第四年为1.50%,第五年为2.00%,第六年为2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1061,
+      "days_to_subscribe": -1062,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3354,7 +3332,7 @@
       "bond_expire_year": 1.3616,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1067,
+      "days_to_subscribe": -1068,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3375,7 +3353,7 @@
       "bond_expire_year": 2.0164,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.80%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1071,
+      "days_to_subscribe": -1072,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3396,7 +3374,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.3%、第二年0.5%、第三年1.0%、第四年1.5%、第五年2.2%、第六年3.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -1076,
+      "days_to_subscribe": -1077,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3417,7 +3395,7 @@
       "bond_expire_year": 2.1315,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.2%、第二年0.4%、第三年0.8%、第四年1.5%、第五年2.0%、第六年2.5%。",
       "days_to_record": null,
-      "days_to_subscribe": -1083,
+      "days_to_subscribe": -1084,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3438,7 +3416,7 @@
       "bond_expire_year": 1.8274,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%、第二年0.50%、第三年1.00%、第四年1.70%、第五年2.40%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1085,
+      "days_to_subscribe": -1086,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3459,7 +3437,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.2%,第二年0.4%,第三年0.8%,第四年1.5%,第五年1.8%,第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -1088,
+      "days_to_subscribe": -1089,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3480,7 +3458,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年1.00%、第四年1.80%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1097,
+      "days_to_subscribe": -1098,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3501,7 +3479,7 @@
       "bond_expire_year": 1.8329,
       "interest_rate_explain": "第一年0.20%、第二年0.50%、第三年1.00%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1103,
+      "days_to_subscribe": -1104,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3522,7 +3500,7 @@
       "bond_expire_year": 2.2,
       "interest_rate_explain": "第一年为0.40%、第二年为0.60%、第三年为1.00%、第四年为1.80%、第五年为2.50%、第六年为3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1103,
+      "days_to_subscribe": -1104,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3543,7 +3521,7 @@
       "bond_expire_year": 1.9781,
       "interest_rate_explain": "第一年0.30%,第二年0.50%,第三年1.00%,第四年1.60%,第五年2.30%,第六年2.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -1117,
+      "days_to_subscribe": -1118,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3564,7 +3542,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.30%,第二年0.50%,第三年1.00%,第四年1.50%,第五年2.00%,第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1117,
+      "days_to_subscribe": -1118,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3585,7 +3563,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.50%、第二年0.70%、第三年1.00%、第四年1.70%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1118,
+      "days_to_subscribe": -1119,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3606,7 +3584,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.30%、第二年0.50%、第三年1.00%、第四年1.80%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1120,
+      "days_to_subscribe": -1121,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3627,7 +3605,7 @@
       "bond_expire_year": 1.4493,
       "interest_rate_explain": "第一年0.3%,第二年0.5%,第三年1.0%,第四年1.5%,第五年2.5%,第六年3.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -1123,
+      "days_to_subscribe": -1124,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3648,7 +3626,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转换公司债券票面利率为第一年0.20%、第二年0.40%、第三年1.20%、第四年1.80%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1124,
+      "days_to_subscribe": -1125,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3669,7 +3647,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1125,
+      "days_to_subscribe": -1126,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3690,7 +3668,7 @@
       "bond_expire_year": 2.4932,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%、第二年0.50%、第三年1.00%、第四年1.70%、第五年2.40%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1125,
+      "days_to_subscribe": -1126,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3711,7 +3689,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年为0.25%、第二年为0.45%、第三年为0.90%、第四年为1.70%、第五年为2.50%、第六年为2.80%。",
       "days_to_record": null,
-      "days_to_subscribe": -1126,
+      "days_to_subscribe": -1127,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3732,7 +3710,7 @@
       "bond_expire_year": 1.4877,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.80%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1127,
+      "days_to_subscribe": -1128,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3753,7 +3731,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.30%,第二年0.50%,第三年1.00%,第四年1.50%,第五年2.00%,第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1133,
+      "days_to_subscribe": -1134,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3774,7 +3752,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年1.00%、第四年1.50%、第五年2.00%、第六年3.20%。",
       "days_to_record": null,
-      "days_to_subscribe": -1152,
+      "days_to_subscribe": -1153,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3795,7 +3773,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.70%、第五年2.40%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1154,
+      "days_to_subscribe": -1155,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3816,7 +3794,7 @@
       "bond_expire_year": 1.6603,
       "interest_rate_explain": "第一年0.40%、第二年0.60%、第三年1.20%、第四年1.80%、第五年2.40%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1158,
+      "days_to_subscribe": -1159,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3837,7 +3815,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1159,
+      "days_to_subscribe": -1160,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3858,7 +3836,7 @@
       "bond_expire_year": 2.5315,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1161,
+      "days_to_subscribe": -1162,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3879,7 +3857,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.80%、第四年1.50%、第五年2.00%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1162,
+      "days_to_subscribe": -1163,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3900,7 +3878,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.2%、第二年0.4%、第三年1.0%、第四年1.5%、第五年1.8%、第六年2.5%。",
       "days_to_record": null,
-      "days_to_subscribe": -1165,
+      "days_to_subscribe": -1166,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3921,7 +3899,7 @@
       "bond_expire_year": 2.5562,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1181,
+      "days_to_subscribe": -1182,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3942,7 +3920,7 @@
       "bond_expire_year": 1.6493,
       "interest_rate_explain": "第一年为0.30%,第二年为0.50%,第三年为1.00%,第四年为1.50%,第五年为1.80%,第六年为2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1181,
+      "days_to_subscribe": -1182,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3963,7 +3941,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%、第二年0.40%、第三年0.60%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1186,
+      "days_to_subscribe": -1187,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -3984,7 +3962,7 @@
       "bond_expire_year": 2.9342,
       "interest_rate_explain": "第一年0.50%、第二年0.70%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1186,
+      "days_to_subscribe": -1187,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4005,7 +3983,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.30%,第二年0.50%,第三年1.00%,第四年1.50%,第五年1.80%,第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1189,
+      "days_to_subscribe": -1190,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4026,7 +4004,7 @@
       "bond_expire_year": 2.4986,
       "interest_rate_explain": "本次发行的可转债票面利率设定为:第一年0.30%、第二年0.50%、第三年0.80%、第四年1.50%、第五年2.00%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1190,
+      "days_to_subscribe": -1191,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4047,7 +4025,7 @@
       "bond_expire_year": 1.2411,
       "interest_rate_explain": "第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年2.50%、第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1193,
+      "days_to_subscribe": -1194,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4068,7 +4046,7 @@
       "bond_expire_year": 3.2082,
       "interest_rate_explain": "第一年0.30%、第二年0.50%、第三年1.00%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1193,
+      "days_to_subscribe": -1194,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4089,7 +4067,7 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "第一年0.20%,第二年0.40%,第三年0.80%,第四年1.50%,第五年2.00%,第六年2.50%。",
       "days_to_record": null,
-      "days_to_subscribe": -1194,
+      "days_to_subscribe": -1195,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4110,7 +4088,7 @@
       "bond_expire_year": 1.8548,
       "interest_rate_explain": "第一年0.30%,第二年0.50%,第三年1.00%,第四年1.80%,第五年2.50%,第六年3.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1194,
+      "days_to_subscribe": -1195,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4131,7 +4109,7 @@
       "bond_expire_year": 5.0,
       "interest_rate_explain": "第一年到第五年的利率分别为:0.5%、0.8%、1.1%、1.4%、1.7%。本次发行可转换公司债券按票面金额由2010年5月4日起开始计算利息,每年付息一次。",
       "days_to_record": null,
-      "days_to_subscribe": -1196,
+      "days_to_subscribe": -1197,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
@@ -4152,30 +4130,30 @@
       "bond_expire_year": 2.2438,
       "interest_rate_explain": "本次发行的可转债票面利率第一年0.30%、第二年0.40%、第三年0.80%、第四年1.50%、第五年1.80%、第六年2.00%。",
       "days_to_record": null,
-      "days_to_subscribe": -1196,
+      "days_to_subscribe": -1197,
       "risk_level": "低",
       "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
     },
     {
-      "stock_code": "300737",
-      "stock_name": "科顺股份",
-      "stage": "已上市",
-      "stage_score": 100,
+      "stock_code": "605016",
+      "stock_name": "百龙创园",
+      "stage": "发行成功待上市",
+      "stage_score": 90,
       "announcements": [],
-      "bond_code": "123216",
-      "bond_name": "科顺转债",
-      "rating": "AA-",
-      "online_subscribe_date": "2023-08-04",
-      "issue_amount_billion": 21.98,
-      "winning_rate": 0.0045649054,
-      "listing_date": "2023-08-23",
-      "expire_date": "2029-08-04",
+      "bond_code": "111027",
+      "bond_name": "百龙转债",
+      "rating": "AA",
+      "online_subscribe_date": "2026-11-16",
+      "issue_amount_billion": 7.48149,
+      "winning_rate": 0.00235147,
+      "listing_date": null,
+      "expire_date": "2032-11-16",
       "bond_expire_year": 6.0,
-      "interest_rate_explain": "第一年0.30%,第二年0.50%,第三年1.00%,第四年1.50%,第五年1.80%,第六年2.00%。",
+      "interest_rate_explain": "第一年0.1%、第二年0.3%、第三年0.6%、第四年1.0%、第五年1.5%、第六年2.0%。",
       "days_to_record": null,
-      "days_to_subscribe": -1200,
+      "days_to_subscribe": -1,
       "risk_level": "低",
-      "next_action": "已上市交易，后续关注转股期、下修、强赎、回售。"
+      "next_action": "发行已完成，等待上市公告或上市交易。"
     }
   ]
 }
