@@ -1,16 +1,17 @@
 {
-  "generated_at": "2026-11-19T20:06:16+08:00",
-  "today": "2026-11-19",
+  "generated_at": "2026-11-20T00:30:59+08:00",
+  "today": "2026-11-20",
   "lookback_days": 1200,
   "total": 198,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
     "已上市": 196,
     "发行成功待上市": 2
   },
   "risks": {
-    "低": 198
+    "高": 1,
+    "低": 197
   },
   "source_warnings": [
     "AKShare bond_cov_issue_cninfo 获取失败：bond_cov_issue_cninfo 已在 1.20.44 更名为 bond_cb_issue_cninfo，请改用 ak.bond_cb_issue_cninfo；参数与返回的列也可能有调整，用 ak.interface_info(\"bond_cb_issue_cninfo\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename",

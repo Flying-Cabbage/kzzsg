@@ -1,21 +1,44 @@
 {
-  "generated_at": "2026-11-19T20:06:16+08:00",
-  "today": "2026-11-19",
+  "generated_at": "2026-11-20T00:30:59+08:00",
+  "today": "2026-11-20",
   "lookback_days": 1200,
   "total": 198,
   "core_count": 0,
-  "alert_count": 0,
+  "alert_count": 1,
   "stages": {
     "已上市": 196,
     "发行成功待上市": 2
   },
   "risks": {
-    "低": 198
+    "高": 1,
+    "低": 197
   },
   "source_warnings": [
     "AKShare bond_cov_issue_cninfo 获取失败：bond_cov_issue_cninfo 已在 1.20.44 更名为 bond_cb_issue_cninfo，请改用 ak.bond_cb_issue_cninfo；参数与返回的列也可能有调整，用 ak.interface_info(\"bond_cb_issue_cninfo\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename",
     "AKShare bond_zh_hs_cov_spot 获取失败：bond_zh_hs_cov_spot 已在 1.20.44 更名为 bond_cb_realtime_sina，请改用 ak.bond_cb_realtime_sina；参数与返回的列也可能有调整，用 ak.interface_info(\"bond_cb_realtime_sina\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename"
   ],
   "source_note": "公告节点来自巨潮资讯公告标题识别；发行、申购、股权登记、转股日期来自 AKShare/巨潮可转债发行表及东方财富可转债基础表。",
-  "items": []
+  "items": [
+    {
+      "stock_code": "603163",
+      "stock_name": "圣晖集成",
+      "stage": "发行成功待上市",
+      "stage_score": 90,
+      "announcements": [],
+      "bond_code": "113712",
+      "bond_name": "圣晖转债",
+      "rating": "AA-",
+      "online_subscribe_date": "2026-11-23",
+      "issue_amount_billion": 5.5,
+      "winning_rate": null,
+      "listing_date": null,
+      "expire_date": "2032-11-23",
+      "bond_expire_year": 6.0,
+      "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
+      "days_to_record": null,
+      "days_to_subscribe": 3,
+      "risk_level": "高",
+      "next_action": "距离网上申购/优先配售日还有 3 天。"
+    }
+  ]
 }
