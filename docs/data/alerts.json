@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-20T20:08:29+08:00",
-  "today": "2026-11-20",
+  "generated_at": "2026-11-21T00:04:36+08:00",
+  "today": "2026-11-21",
   "lookback_days": 1200,
-  "total": 198,
+  "total": 196,
   "core_count": 0,
   "alert_count": 1,
   "stages": {
-    "已上市": 196,
+    "已上市": 194,
     "发行成功待上市": 2
   },
   "risks": {
     "高": 1,
-    "低": 197
+    "低": 195
   },
   "source_warnings": [
     "AKShare bond_cov_issue_cninfo 获取失败：bond_cov_issue_cninfo 已在 1.20.44 更名为 bond_cb_issue_cninfo，请改用 ak.bond_cb_issue_cninfo；参数与返回的列也可能有调整，用 ak.interface_info(\"bond_cb_issue_cninfo\") 查看。完整对照见 https://akshare.akfamily.xyz/changelog.html#changelog-rename",
@@ -36,9 +36,9 @@
       "bond_expire_year": 6.0,
       "interest_rate_explain": "本次发行的可转债票面利率为第一年0.20%、第二年0.40%、第三年0.60%、第四年1.00%、第五年1.50%、第六年1.80%。",
       "days_to_record": null,
-      "days_to_subscribe": 3,
+      "days_to_subscribe": 2,
       "risk_level": "高",
-      "next_action": "距离网上申购/优先配售日还有 3 天。"
+      "next_action": "距离网上申购/优先配售日还有 2 天。"
     }
   ]
 }
